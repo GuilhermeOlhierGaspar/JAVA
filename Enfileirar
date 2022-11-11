@@ -1,0 +1,45 @@
+public class Main
+{
+public static void main (String[] args){
+    
+    Fila fila = new Fila();
+    fila.enfileira (1);
+    fila.enfileira (2);
+    fila.enfileira (3);   
+    fila.enfileira (4);
+    fila.imprimir();
+	}
+}
+
+//////////////////////////////////////////////////////////
+
+public class Fila {
+    int valores[];
+    int primeiro;
+    int ultimo;
+
+public Fila(){
+    
+    valores = new int [10];
+    primeiro = -1;
+    ultimo = -1;
+    
+}
+
+public void enfileira(int n){
+    ultimo ++;
+    valores[ultimo] = n;
+}
+
+public void imprimir (){
+    for (int i = primeiro +1; i<= ultimo; i++)
+    System.out.println(valores[i]);
+}
+
+public int desinfileirar(){
+    
+    primeiro++;
+    return valores [primeiro];
+}
+
+}
