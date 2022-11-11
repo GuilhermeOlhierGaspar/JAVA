@@ -1,0 +1,23 @@
+public class Main
+{
+	public static void main(String[] args) {
+		TadFila f = new TadFila();
+		Pessoa p = new Pessoa()
+}
+
+class Pessoa { 
+		   int idade;
+		   char sexo;
+		   String nome;
+		   
+		   public Pessoa(int i, char s, String n){
+		       idade = i;
+		       sexo = s;
+		       nome = n;
+		   }
+		   
+		   void imprime(){
+		       Systen.out.print("Nome: "+nome+,"idade: "+idade+,"Sexo: "+sexo);
+		       System.out.print("\n");
+		   }
+	}
